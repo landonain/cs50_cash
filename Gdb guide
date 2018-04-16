@@ -1,0 +1,13 @@
+GDB is a debugger for C
+
+installing to c9
+	sudo su
+	apt-get install gdbserver
+
+running gcc -g filename.c -lcs50 -lm (adding modules from cs50 and math)
+gdb a.out - runs the output from the above command
+break 35 - line number with
+run 35 - runs the debugger from that line in the program
+quit - quits
+
+https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_gdb.php
