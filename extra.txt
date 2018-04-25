@@ -1,0 +1,32 @@
+ if(i / 10 || remaind != 0)
+
+    {
+        int dime_coins = (int)floor(remaind / 10);
+        //printf("%d dime coins \n", dime_coins);
+        left_over = dime_coins * 10;
+        remaind = remaind - left_over;
+        //printf("%d dime remaind \n", remaind);
+        total_coins_count = dime_coins + total_coins_count;
+    }
+
+    if(i / 5 || remaind != 0)
+
+    {
+        int nickel_coins = (int)floor(remaind / 5);
+        //printf("%d nickel coins \n", nickel_coins);
+        left_over = nickel_coins * 5;
+        remaind = remaind - left_over;
+        //printf("%d nickel remain \n", remaind);
+        total_coins_count = nickel_coins + total_coins_count;
+    }
+
+    if(i / 1 || remaind != 0)
+
+    {
+        int penny_coins = (int)floor(remaind / 1);
+        //printf("%d penny coins \n", penny_coins);
+        left_over = penny_coins * 1;
+        remaind = remaind - left_over;
+        //printf("%d penny remain \n", remaind);
+        total_coins_count = penny_coins + total_coins_count;
+    }
